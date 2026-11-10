@@ -126,3 +126,22 @@ html.pitch{scroll-snap-type:y proximity}
 .nav{flex-wrap:nowrap}.nav ul{flex:1;min-width:0;justify-content:flex-end}
 @media(max-width:1380px){.nav .draft{display:none}}
 html{scroll-padding-top:54px}.beat{padding-top:44px}
+
+/* ---- v0.3 theme: light latte, real brown beans, no black ---- */
+:root{--bg:#F2E8D8;--bg2:#EADCC6;--card:#FCF8F0;--dark:#4B2E1C;--cream:#F7EEDD;--line:rgba(75,46,28,.17)}
+html,body{background:var(--bg)}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:url(../img/beans.svg) 0 0/440px 440px;opacity:.11}
+.nav{background:rgba(242,232,216,.95)}
+.dots,.hud{background:rgba(242,232,216,.96)}
+.beat.alt{background:rgba(234,220,198,.62)}
+.beat.dark{background:rgba(226,206,176,.55);color:var(--ink);border-bottom:1px solid var(--line)}
+.beat.dark .sub{color:var(--mut)}.beat.dark .eyebrow{color:var(--ortxt)}
+.beat.dark .btn.ghost{color:var(--ink);border-color:var(--ink)}.beat.dark .btn.ghost:hover{background:var(--ink);color:#fff}
+.tline:before{background:rgba(75,46,28,.3)}.tline .n i{border-color:var(--bg)}.tline .n b{color:var(--ink)}.tline .n span{color:var(--mut)}
+.gates .st{background:var(--card);border:1px solid var(--line)}.gates .st b{color:var(--ink)}.gates .st span{color:var(--mut)}.gates .st em{color:var(--ortxt)}
+.decs div{border-color:var(--ortxt);color:var(--ink);background:rgba(252,248,240,.6)}.decs b{color:var(--ortxt)}
+.drawer{background:var(--card)}
+.tabs button,.filters button,.guests span,.lad div,.calc input,.chip{background:var(--card)}
+.compare-box{background:rgba(243,107,35,.1)}.compare-box:hover{background:rgba(243,107,35,.18)}
+.mx{background:var(--card)}.mx .q3{background:#F1E8DA}
+.note{background:transparent}
